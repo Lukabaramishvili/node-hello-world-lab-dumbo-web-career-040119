@@ -2,9 +2,8 @@
 var helloWorld = function() {
   return 'Hello World'
 }
-
 if (require.main === module) {
-  console.log(helloWorld)
+  console.log(helloWorld())
 } else {
-  module.export = helloWorld
+  module.exports = helloWorld
 }
